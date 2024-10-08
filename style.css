@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Centraliza o título e a seção */
+section#produtos {
+    text-align: center; /* Centraliza o título */
+    margin: 2rem auto;
+    max-width: 1200px; /* Limita a largura máxima da seção */
+}
+
+section#produtos h2 {
+    margin-bottom: 20px; /* Espaçamento entre o título e os produtos */
+}
+
+/* Alinha os produtos lado a lado */
+.produtos-container {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 20px; /* Espaçamento horizontal entre as imagens */
+    flex-wrap: wrap; /* Permite que os produtos quebrem em linhas se necessário */
+}
+
+.produto {
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 30%; /* Ajusta o tamanho de cada produto */
+    box-sizing: border-box;
+}
+
+.produto img {
+    width: 70%; /* A imagem vai ocupar toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 200px; /* Define uma altura máxima */
+    object-fit: cover; /* Corta as imagens, se necessário, sem distorção */
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #00bfa5;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #00796b;
+}
